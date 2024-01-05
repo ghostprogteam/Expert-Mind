@@ -32,49 +32,49 @@ class LayoutHome extends StatelessWidget {
         ],
       ),
       body: Home(),
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30),
-              topRight: Radius.circular(30),
-            ),
-            boxShadow: [
-              BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
-                  spreadRadius: 1,
-                  blurRadius: 3,
-                  offset: Offset.zero),
-            ]
-        ),
-        child: SalomonBottomBar(
-          currentIndex: _currentIndex,
-          onTap: (i) { _currentIndex = i;}
-              ,
-          items: [
-            SalomonBottomBarItem(
-              icon: Icon(Icons.home),
-              title: Text("Home"),
-              selectedColor: ProjectColors.mainColor,
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.search),
-              title: Text("Search"),
-              selectedColor: ProjectColors.mainColor,
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.add_location),
-              title: Text("Laction"),
-              selectedColor: ProjectColors.mainColor,
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.settings),
-              title: Text("Settings"),
-              selectedColor: ProjectColors.mainColor,
-            ),
-          ],
-        ),
-      ),
+      // bottomNavigationBar: Container(
+      //   decoration: BoxDecoration(
+      //       color: Colors.white,
+      //       borderRadius: BorderRadius.only(
+      //         topLeft: Radius.circular(30),
+      //         topRight: Radius.circular(30),
+      //       ),
+      //       boxShadow: [
+      //         BoxShadow(
+      //             color: Colors.grey.withOpacity(0.3),
+      //             spreadRadius: 1,
+      //             blurRadius: 3,
+      //             offset: Offset.zero),
+      //       ]
+      //   ),
+      //   child: SalomonBottomBar(
+      //     currentIndex: _currentIndex,
+      //     onTap: (i) { _currentIndex = i;}
+      //         ,
+      //     items: [
+      //       SalomonBottomBarItem(
+      //         icon: Icon(Icons.home),
+      //         title: Text("Home"),
+      //         selectedColor: ProjectColors.mainColor,
+      //       ),
+      //       SalomonBottomBarItem(
+      //         icon: Icon(Icons.search),
+      //         title: Text("Search"),
+      //         selectedColor: ProjectColors.mainColor,
+      //       ),
+      //       SalomonBottomBarItem(
+      //         icon: Icon(Icons.add_location),
+      //         title: Text("Laction"),
+      //         selectedColor: ProjectColors.mainColor,
+      //       ),
+      //       SalomonBottomBarItem(
+      //         icon: Icon(Icons.settings),
+      //         title: Text("Settings"),
+      //         selectedColor: ProjectColors.mainColor,
+      //       ),
+      //     ],
+      //   ),
+      // ),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:expert_mind/core/shared/color.dart';
 import 'package:flutter/material.dart';
 
@@ -8,11 +9,86 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List listProject=[
+      {
+       "name" : "مشروع توصيل طلبات مطعم" ,
+        "image": "assets/images/AppFood.jpg"
+      },
+      {
+        "name" : "مشروع أدارة الملحظات" ,
+        "image": "assets/images/AppNote.jpg"
+      }
+    ];
+    List<Widget> listProjectWidget=[
+      for (int i = 0; i < listProject.length; i++) ...[
+        Container(
+          height: 200,
+          child: Container(
+            height: 200,
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            decoration: BoxDecoration(
+              color: ProjectColors.mainColor,
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: [
+                BoxShadow(
+                    color: ProjectColors.greyColors200,
+                    spreadRadius: 2,
+                    blurRadius: 3,
+                    offset: Offset.zero),
+              ],
+            ),
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                Opacity(
+                  opacity: 0.3,
+                  child: Image(
+                    image: AssetImage("${listProject[i]['image']}"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                Positioned(
+                    bottom: 15,
+                    right: 10,
+                    child: Text(
+                      '${listProject[i]['name']}',
+                      style: TextStyles.font18WhiteW500,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ))
+              ],
+            ),
+          ),
+
+
+        )
+      ],
+    ];
     return Scaffold(
       body: Container(
         padding: EdgeInsetsDirectional.all(15),
         child: Column(
           children: [
+            CarouselSlider(
+                items:listProjectWidget ,
+                options: CarouselOptions(
+                  height: 200,
+                  aspectRatio: 16/9,
+                  viewportFraction: 0.8,
+                  initialPage: 0,
+                  enableInfiniteScroll: true,
+                  reverse: false,
+                  autoPlay: true,
+                  autoPlayInterval: Duration(seconds: 3),
+                  autoPlayAnimationDuration: Duration(milliseconds: 800),
+                  autoPlayCurve: Curves.fastOutSlowIn,
+                  enlargeCenterPage: true,
+                  enlargeFactor: 0.3,
+                  onPageChanged: (v,d){},
+                  scrollDirection: Axis.horizontal,
+                )
+            ),
+            SizedBox(height: 15,),
             Container(
               decoration: BoxDecoration(
                 color: ProjectColors.greyColors200,
@@ -245,3 +321,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+

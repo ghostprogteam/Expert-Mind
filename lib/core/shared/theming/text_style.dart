@@ -10,6 +10,13 @@ class TextStyles{
     color: ProjectColors.blackColor,
 
   );
+
+  static TextStyle font18WhiteW500 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    color: ProjectColors.whiteColor,
+
+  );
   static TextStyle font20BlackW100 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w100,
