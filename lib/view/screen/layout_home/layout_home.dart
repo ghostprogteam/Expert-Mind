@@ -1,4 +1,5 @@
 
+import 'package:expert_mind/view/screen/home/home.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/shared/color.dart';
@@ -9,13 +10,12 @@ class LayoutHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: whiteColor,
+      // backgroundColor: whiteColor,
       appBar: AppBar(
-        foregroundColor: mainColor,
-        backgroundColor:  whiteColor,
+        foregroundColor: ProjectColors.mainColor,
         elevation: 0,
         leading: Padding(
-          padding: const EdgeInsetsDirectional.only(start: 12),
+          padding: const EdgeInsetsDirectional.only(start: 15),
           child: CircleAvatar(),
         ),
         title: Text(
@@ -24,11 +24,12 @@ class LayoutHome extends StatelessWidget {
           ),
         actions: [
           Padding(
-            padding: const EdgeInsetsDirectional.only(end: 12),
+            padding: const EdgeInsetsDirectional.only(end: 15),
             child: Icon(Icons.exit_to_app_rounded),
           )
         ],
       ),
+      body: Home(),
 
     );
   }

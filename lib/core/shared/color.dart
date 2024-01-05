@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
-Color  mainColor = Color(0xFF246BFD);
-Color whiteColor = Colors.white;
-Color blackColor = Colors.black;
+
+class ProjectColors{
+  static Color  mainColor = Color(0xFF246BFD);
+  static Color whiteColor = Colors.white;
+  static Color whiteColor10 = Colors.white10;
+  static Color blackColor = Colors.black;
+  static Color greyColors200 = Colors.grey.shade200;
+  static Color amberColor =  Colors.amber;
+}
 MaterialColor createMaterialColor(Color color) {
   List strengths = <double>[.05];
   Map<int, Color> swatch = {};

@@ -16,15 +16,15 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: createMaterialColor(mainColor),
-          fontFamily: 'Tajawal'
-      ),
+          appBarTheme: AppBarTheme(
+            color: ProjectColors.whiteColor10
+          ),
+          primarySwatch: createMaterialColor(ProjectColors.mainColor),
+          fontFamily: 'Tajawal'),
 
       // home: LayoutHome(),
       initialRoute: '/LayoutHome',
-      getPages: [
-        GetPage(name: '/LayoutHome', page:()=> LayoutHome())
-      ],
+      getPages: [GetPage(name: '/LayoutHome', page: () => LayoutHome())],
 
       localizationsDelegates: [
         GlobalCupertinoLocalizations.delegate,
