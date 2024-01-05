@@ -23,4 +23,17 @@ class TextStyles{
 
   );
 
+  static TextStyle font18mainColorBold = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: ProjectColors.mainColor,
+
+  );
+
+  static TextStyle font18GreyW300 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w300,
+    color: ProjectColors.greyColor,
+
+  );
 }

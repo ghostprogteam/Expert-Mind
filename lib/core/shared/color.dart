@@ -8,6 +8,7 @@ class ProjectColors{
   static Color blackColor = Colors.black;
   static Color greyColors200 = Colors.grey.shade200;
   static Color amberColor =  Colors.amber;
+  static Color greyColor =  Colors.grey;
 }
 MaterialColor createMaterialColor(Color color) {
   List strengths = <double>[.05];
