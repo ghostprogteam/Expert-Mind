@@ -14,18 +14,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Expert Mind',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: createMaterialColor(mainColor),
           fontFamily: 'Tajawal'
-
       ),
 
       // home: LayoutHome(),
       initialRoute: '/LayoutHome',
       getPages: [
-
         GetPage(name: '/LayoutHome', page:()=> LayoutHome())
       ],
 
