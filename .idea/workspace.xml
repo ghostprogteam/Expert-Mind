@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeb85d17-f032-4c1d-8e80-27988ed4188a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/AppFood.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/AppNote.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/screen/courses/courses.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/screen/project/project.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/widget/courses_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/widget/home_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/widget/project_widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
@@ -28,6 +31,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,5 +106,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/expert_mind" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/view/screen/layout_home/layout_home.dart</url>
+          <line>102</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

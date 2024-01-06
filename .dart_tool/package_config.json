@@ -176,6 +176,12 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "google_nav_bar",
+      "rootUri": "file:///C:/Users/Alabsi/AppData/Local/Pub/Cache/hosted/pub.dev/google_nav_bar-5.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "graphs",
       "rootUri": "file:///C:/Users/Alabsi/AppData/Local/Pub/Cache/hosted/pub.dev/graphs-2.3.1",
       "packageUri": "lib/",
@@ -356,12 +362,6 @@
       "languageVersion": "2.17"
     },
     {
-      "name": "salomon_bottom_bar",
-      "rootUri": "file:///C:/Users/Alabsi/AppData/Local/Pub/Cache/hosted/pub.dev/salomon_bottom_bar-3.3.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "shared_preferences",
       "rootUri": "file:///C:/Users/Alabsi/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.2.2",
       "packageUri": "lib/",
@@ -482,7 +482,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-01-05T15:29:56.457259Z",
+  "generated": "2024-01-06T15:16:01.168610Z",
   "generator": "pub",
   "generatorVersion": "3.0.1"
 }

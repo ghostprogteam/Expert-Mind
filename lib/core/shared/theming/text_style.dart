@@ -18,7 +18,7 @@ class TextStyles{
 
   );
   static TextStyle font20BlackW100 = TextStyle(
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: FontWeight.w100,
     color: ProjectColors.blackColor,
 
