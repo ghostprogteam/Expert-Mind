@@ -14,15 +14,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      defaultTransition: Transition.rightToLeft,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          appBarTheme: AppBarTheme(
-            color: ProjectColors.whiteColor10
-          ),
-          primarySwatch: createMaterialColor(ProjectColors.mainColor),
-          fontFamily: 'Tajawal'),
+        appBarTheme: AppBarTheme(color: ProjectColors.whiteColor10),
+        primarySwatch: createMaterialColor(ProjectColors.mainColor),
+        fontFamily: 'Tajawal',
+      ),
 
-      // home: LayoutHome(),
+      // home: ChatInboxScreen(),
       initialRoute: '/LayoutHome',
       getPages: [GetPage(name: '/LayoutHome', page: () => LayoutHome())],
 

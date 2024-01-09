@@ -40,7 +40,7 @@ dependencies:
   #  State Management
   get: ^4.6.1
   #  Conyains a Group Of Dialog (Insert , Error , Warning , .....)
-  awesome_dialog: ^3.1.0
+  awesome_dialog: ^3.2.0
   #  It is Storage Space That Saves Data When Application is Closed
   shared_preferences: ^2.2.0
   #  Dealing With Photos SVG
@@ -53,11 +53,12 @@ dependencies:
   connectivity_plus: ^5.0.2
   #  Dealing With Time and Date
   flutter_datetime_picker: ^1.5.1
-  intl: ^0.18.0
+  intl: ^0.18.1
   #  bottomNavBar
   google_nav_bar: ^5.0.6
   #  Slider in The Top Page
   carousel_slider: ^4.2.1
+  animated_rating_stars: ^1.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -102,8 +103,8 @@ flutter:
   fonts:
     - family: Tajawal
       fonts:
-        - asset: assets/fonts/Tajawal-Bold.ttf
-        - asset: assets/fonts/Tajawal-Regular.ttf
+        # - asset: assets/fonts/Tajawal-Bold.ttf
+        # - asset: assets/fonts/Tajawal-Regular.ttf
         - asset: assets/fonts/Tajawal-Medium.ttf
   # fonts:
   #   - family: Schyler
