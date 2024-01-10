@@ -68,6 +68,41 @@ myIconButton({
   );
 }
 
+myChatAvatarInChatScreens({
+  required image,
+  required strokeWidth,
+  required imageWidth,
+}) {
+  return Stack(
+    alignment: Alignment.center,
+    children: [
+      Container(
+        width: strokeWidth.toDouble(),
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          border: Border.all(
+            color: ProjectColors.amberColor,
+            width: 3,
+          ),
+        ),
+      ),
+      Container(
+        width: imageWidth.toDouble(),
+        clipBehavior: Clip.antiAliasWithSaveLayer,
+        // padding: EdgeInsetsDirectional.all(5),
+        decoration: BoxDecoration(
+          color: ProjectColors.mainColor,
+          shape: BoxShape.circle,
+        ),
+        child: Image.asset(
+          image,
+          fit: BoxFit.fill,
+        ),
+      ),
+    ],
+  );
+}
+
 myListTileItem({
   required index,
   required String image,
@@ -82,35 +117,10 @@ myListTileItem({
             index: index,
           ));
     },
-    leading: Stack(
-      alignment: Alignment.center,
-      children: [
-        Container(
-          width: 65,
-          height: 65,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(
-              color: ProjectColors.amberColor,
-              width: 3,
-            ),
-          ),
-        ),
-        Container(
-          width: 47,
-          height: 47,
-          clipBehavior: Clip.antiAliasWithSaveLayer,
-          // padding: EdgeInsetsDirectional.all(5),
-          decoration: BoxDecoration(
-            color: ProjectColors.mainColor,
-            shape: BoxShape.circle,
-          ),
-          child: Image.asset(
-            image,
-            fit: BoxFit.fill,
-          ),
-        ),
-      ],
+    leading: myChatAvatarInChatScreens(
+      image: image,
+      strokeWidth: 65,
+      imageWidth: 45,
     ),
     title: SizedBox(
       height: 30,
@@ -132,9 +142,10 @@ myListTileItem({
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Container(
-          width: 22,
-          height: 22,
-          padding: EdgeInsetsDirectional.all(3),
+          width: 23,
+          height: 23,
+          alignment: AlignmentDirectional.center,
+          padding: EdgeInsetsDirectional.all(2),
           decoration: BoxDecoration(
             color: ProjectColors.mainColor,
             shape: BoxShape.circle,

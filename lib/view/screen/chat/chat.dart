@@ -13,19 +13,17 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: myIconButton(
-          onPressed: () {
-            Get.back();
-          },
-          icon: Icon(
-            Icons.arrow_back_ios_rounded,
-          ),
+        leading: myChatAvatarInChatScreens(
+          image: 'assets/images/raymond.jpg',
+          strokeWidth: 45,
+          imageWidth: 35,
         ),
+        // leadingWidth: 50,
         title: Text(
           'حسام خالد الزريقي',
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style: TextStyles.font18BlackBold,
+          style: TextStyles.font16BlackBold,
         ),
         actions: [
           myIconButton(
@@ -64,7 +62,6 @@ class ChatScreen extends StatelessWidget {
                     ),
                     myChatMessage(
                       message: 'كيف حالك؟ هل أنت بخير؟',
-                     
                       txtStyle: TextStyles.font14WhiteW500,
                     ),
                     myChatMessage(

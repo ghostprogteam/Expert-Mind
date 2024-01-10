@@ -12,18 +12,9 @@ class ChatInboxScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        leading: Container(
-          margin: EdgeInsetsDirectional.all(10),
-          padding: EdgeInsetsDirectional.all(5),
-          clipBehavior: Clip.antiAliasWithSaveLayer,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: ProjectColors.mainColor,
-          ),
-          child: Image.asset(
-            'assets/images/app-icon-white.png',
-            fit: BoxFit.cover,
-          ),
+        leading: Image.asset(
+          'assets/images/app-icon.png',
+          fit: BoxFit.cover,
         ),
         title: Text(
           'صندوق المحادثة',
@@ -53,9 +44,7 @@ class ChatInboxScreen extends StatelessWidget {
         ),
       ),
       body: Container(
-        padding: EdgeInsetsDirectional.symmetric(
-          vertical: 5,
-        ),
+        width: double.infinity,
         child: myListViewInChatInbox(
           itemBuilder: (ctx, index) => myListTileItem(
             index: index,

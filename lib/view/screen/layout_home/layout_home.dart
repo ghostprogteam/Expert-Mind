@@ -52,12 +52,12 @@ class _LayoutHomeState extends State<LayoutHome> {
                   hoverColor: Colors.grey,
                   haptic: true,
                   tabBorderRadius: 15,
-                  tabActiveBorder: Border.all(color: Colors.black, width: 1),
-                  tabBorder: Border.all(color: Colors.grey, width: 1),
-                  curve: Curves.easeOutExpo,
+                  // tabActiveBorder: Border.all(color: Colors.black, width: 1),
+                  // tabBorder: Border.all(color: Colors.grey, width: 1),
+                  curve: Curves.easeInOut,
                   duration: Duration(milliseconds: 900),
                   gap: 8,
-                  color: Colors.black,
+                  color: Colors.black87,
                   activeColor: ProjectColors.mainColor,
                   iconSize: 24,
                   tabBackgroundColor: ProjectColors.mainColor.withOpacity(0.1),
@@ -65,7 +65,7 @@ class _LayoutHomeState extends State<LayoutHome> {
                   tabs: [
                     GButton(
                       icon: Icons.home,
-                      text: 'ألرئسية',
+                      text: 'ألرئيسية',
                     ),
                     GButton(
                       icon: Icons.menu_book_outlined,
@@ -81,7 +81,7 @@ class _LayoutHomeState extends State<LayoutHome> {
                     ),
                     GButton(
                       icon: Icons.account_circle,
-                      text: 'الحساب',
+                      text: 'البروفايل',
                     ),
                   ]),
             ))));
