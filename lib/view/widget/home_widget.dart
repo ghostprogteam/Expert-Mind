@@ -255,6 +255,7 @@ class PackageSclorWithDetails extends StatelessWidget {
               enlargeFactor: 0.3,
               onPageChanged: (v,d){},
               scrollDirection: Axis.horizontal,
+              
             )
         ),
       ],

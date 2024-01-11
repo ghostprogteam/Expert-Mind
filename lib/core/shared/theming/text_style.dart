@@ -84,4 +84,16 @@ class TextStyles {
     fontWeight: FontWeight.bold,
     color: ProjectColors.blackColor,
   );
+  static TextStyle font18GreyW400 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+    color: ProjectColors.greyColor,
+
+  );
+  // static TextStyle font14GreyW300 = TextStyle(
+  //   fontSize: 14,
+  //   fontWeight: FontWeight.w300,
+  //   color: ProjectColors.greyColor,
+  //
+  // );
 }

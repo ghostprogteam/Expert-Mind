@@ -10,31 +10,31 @@ class ChatInboxScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0.0,
-        leading: Image.asset(
-          'assets/images/app-icon.png',
-          fit: BoxFit.cover,
-        ),
-        title: Text(
-          'صندوق المحادثة',
-          style: TextStyles.font18BlackBold,
-        ),
-        actions: [
-          myIconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.more_vert_rounded,
-            ),
-          ),
-          myIconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.search_rounded,
-            ),
-          ),
-        ],
-      ),
+      // appBar: AppBar(
+      //   elevation: 0.0,
+      //   leading: Image.asset(
+      //     'assets/images/app-icon.png',
+      //     fit: BoxFit.cover,
+      //   ),
+      //   title: Text(
+      //     'صندوق المحادثة',
+      //     style: TextStyles.font18BlackBold,
+      //   ),
+      //   actions: [
+      //     myIconButton(
+      //       onPressed: () {},
+      //       icon: Icon(
+      //         Icons.more_vert_rounded,
+      //       ),
+      //     ),
+      //     myIconButton(
+      //       onPressed: () {},
+      //       icon: Icon(
+      //         Icons.search_rounded,
+      //       ),
+      //     ),
+      //   ],
+      // ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: ProjectColors.mainColor,

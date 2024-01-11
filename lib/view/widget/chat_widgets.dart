@@ -50,7 +50,7 @@ myAwesomeDialog({
         SizedBox(
           height: 20,
         ),
-        myRatingStars(),
+        // myRatingStars(),
       ],
     ),
     btnOkText: 'موافق',

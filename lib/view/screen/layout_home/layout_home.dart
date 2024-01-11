@@ -4,29 +4,40 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 import '../../../core/shared/color.dart';
+// <<<<<<< Updated upstream
+// =======
+import '../../../core/shared/theming/text_style.dart';
+import '../../widget/courses_widget.dart';
+import '../../widget/project_widget.dart';
+// >>>>>>> Stashed changes
+import '../chat/chat.dart';
 import '../courses/courses.dart';
+import '../project/project.dart';
 
-class LayoutHome extends StatefulWidget {
-  LayoutHome({Key? key}) : super(key: key);
 
-  @override
-  State<LayoutHome> createState() => _LayoutHomeState();
-}
-
-class _LayoutHomeState extends State<LayoutHome> {
-  int currentIndex = 0;
-
-  List Screen = [
-    Home(),
-    Courses(),
-    ChatInboxScreen(),
-    Home(),
-    Home(),
-  ];
-
+// =======
+class LayoutHome extends StatelessWidget {
+   // LayoutHome({Key? key}) : super(key: key);
+   int currentIndex = 0;
+   List Screen =[
+     Home(),
+     Courses(),
+     ChatInboxScreen( ),
+     Project(),
+     Home(),
+   ];
+   List<String> nameScreen=[
+     "ألرئسية",
+     "الكورسات",
+     "الدردشات",
+     "المشاريع",
+     "البروفايل"
+   ];
+// >>>>>>> Stashed changes
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBarLayout(nameScreen[currentIndex]),
         body: Screen[currentIndex],
         bottomNavigationBar: Container(
             decoration: BoxDecoration(
@@ -44,9 +55,9 @@ class _LayoutHomeState extends State<LayoutHome> {
                   const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
               child: GNav(
                   onTabChange: (i) {
-                    setState(() {
+                    //setState(() {
                       currentIndex = i;
-                    });
+                   // });
                   },
                   rippleColor: Colors.grey,
                   hoverColor: Colors.grey,

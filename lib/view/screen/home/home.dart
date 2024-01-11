@@ -1,9 +1,8 @@
 import 'package:expert_mind/core/shared/color.dart';
 import 'package:flutter/material.dart';
-
 import '../../../core/shared/theming/text_style.dart';
+import '../../../model/home/list_project_model.dart';
 import '../../widget/home_widget.dart';
-
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -19,7 +18,6 @@ class Home extends StatelessWidget {
       ],
     ];
     return Scaffold(
-      appBar: AppBarLayout(),
       body: Container(
         padding: EdgeInsetsDirectional.symmetric(horizontal: 15, vertical: 5),
         child: Column(
@@ -50,16 +48,16 @@ class Home extends StatelessWidget {
   }
 }
 
-AppBar AppBarLayout() {
+AppBar AppBarLayout(String namePage) {
   return AppBar(
     foregroundColor: ProjectColors.mainColor,
     elevation: 0,
-    leading: Padding(
-      padding: const EdgeInsetsDirectional.only(start: 15),
-      child: CircleAvatar(),
+    leading: Image.asset(
+      'assets/images/app-icon.png',
+      fit: BoxFit.cover,
     ),
     title: Text(
-      'علي نبيل',
+      '${namePage}',
       style: TextStyles.font18BlackW500,
     ),
     actions: [
