@@ -1,3 +1,4 @@
+import 'package:expert_mind/view/screen/profile/edit_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
@@ -18,13 +19,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(color: ProjectColors.whiteColor10),
+        colorScheme: ColorScheme.fromSeed(seedColor: ProjectColors.mainColor),
         primarySwatch: createMaterialColor(ProjectColors.mainColor),
         fontFamily: 'Tajawal',
       ),
 
       // home: ChatInboxScreen(),
       initialRoute: '/LayoutHome',
-      getPages: [GetPage(name: '/LayoutHome', page: () => LayoutHome())],
+      getPages: [
+        GetPage(name: '/LayoutHome', page: () => LayoutHome()),
+        GetPage(
+          name: '/EditProfileScreen',
+          page: () => EditProfileScreen(),
+        ),
+      ],
 
       localizationsDelegates: [
         GlobalCupertinoLocalizations.delegate,

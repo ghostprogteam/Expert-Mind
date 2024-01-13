@@ -12,6 +12,7 @@ import '../../widget/project_widget.dart';
 // >>>>>>> Stashed changes
 import '../chat/chat.dart';
 import '../courses/courses.dart';
+import '../profile/profile.dart';
 import '../project/project.dart';
 
 
@@ -24,7 +25,7 @@ class LayoutHome extends StatelessWidget {
      Courses(),
      ChatInboxScreen( ),
      Project(),
-     Home(),
+     ProfileScreen(),
    ];
    List<String> nameScreen=[
      "ألرئسية",
